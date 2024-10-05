@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.branch-name-generator {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.branch-name-generator label {
+  margin-top: 10px;
+}
+
+.branch-name-generator button {
+  margin-top: 10px;
+}
+
+.generated-branch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.generated-branch button {
+  padding: 5px 10px;
+}

@@ -1,24 +1,12 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import BranchNameGenerator from './components/BranchNameGenerator';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Hola Carlyle, este es tu primer proyecto desde ubuntu con react 
-        </p>
-        
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BranchNameGenerator />
     </div>
   );
 }
