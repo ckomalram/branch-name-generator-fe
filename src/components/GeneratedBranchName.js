@@ -1,19 +1,19 @@
 import React from 'react';
 
-const GeneratedBranchName = (generatedOption) => {
+const GeneratedBranchName = (props) => {
     
   const handleCopy = () => {
-    navigator.clipboard.writeText(generatedOption.option.value);
+    navigator.clipboard.writeText(props.option.value);
     alert('¡Nombre de la rama copiado al portapapeles!');
   };
 
   return (
     <div>
     <div className="generated-branch">
-    <b>{generatedOption.option.name}</b>
+    <b>{props.option.name}</b>
     </div>
     <div className="generated-branch">
-      <p>{generatedOption.option.value}</p>
+      <p>{props.option.value}</p>
       <button onClick={handleCopy}>Copiar</button>
     </div>
     </div>
