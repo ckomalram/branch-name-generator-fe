@@ -9,7 +9,7 @@ const BranchNameGenerator = () => {
 
 
   const handleGenerate = async () => {
-    const url = new URL('http://127.0.0.1:8000/branches');
+    const url = new URL(import.meta.env.BACKEND_HOST + '/branches');
     url.searchParams.append('ticket', ticketNumber);
     url.searchParams.append('description', title);
 

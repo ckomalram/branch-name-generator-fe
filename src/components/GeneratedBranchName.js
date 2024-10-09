@@ -10,7 +10,7 @@ const GeneratedBranchName = (props) => {
   return (
     <div>
     <div className="generated-branch">
-    <b>{props.option.name}</b>
+    <b>{props.option.name}: </b>
     </div>
     <div className="generated-branch">
       <p>{props.option.value}</p>
