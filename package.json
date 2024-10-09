@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "start": "serve dist -s -n",
+    "start": "serve dist -s -n -p $REACT_APP_PORT",
     "dev": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
