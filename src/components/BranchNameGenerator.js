@@ -5,7 +5,6 @@ const BranchNameGenerator = () => {
   const [ticketNumber, setTicketNumber] = useState('');
   const [title, setTitle] = useState('');
   const [generatedNames, setGeneratedNames] = useState([]);
-  const [error, setError] = useState(null);
 
 
   const handleGenerate = async () => {
@@ -27,7 +26,6 @@ const BranchNameGenerator = () => {
         
     } catch (error) {
       console.log(error.message);
-      setError(error.message);
       throw error;
     }
 
