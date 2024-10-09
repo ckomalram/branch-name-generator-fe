@@ -8,7 +8,7 @@ const BranchNameGenerator = () => {
 
 
   const handleGenerate = async () => {
-    const url = new URL(import.meta.env.BACKEND_HOST + '/branches');
+    const url = new URL(process.env.REACT_APP_API_URL + "/branches");
     url.searchParams.append('ticket', ticketNumber);
     url.searchParams.append('description', title);
 
